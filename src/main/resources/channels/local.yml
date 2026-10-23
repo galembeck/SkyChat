@@ -1,0 +1,11 @@
+name: local
+nickname: l
+format: '&e[L] {prefix}{plainsender}&e: {msg}'
+color: YELLOW
+shortcutAllowed: true
+needFocus: false
+distance: 60.0
+crossworlds: false
+delayPerMessage: 0
+costPerMessage: 0.0
+showCostMessage: false

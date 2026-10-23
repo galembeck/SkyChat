@@ -1,0 +1,90 @@
+# ============================================================
+#  SkyChat - mensagens (cores com "&")
+# ============================================================
+
+prefix: ""
+
+channel:
+  no-permission: "&cVocê não tem permissão para usar o canal {channel}."
+  not-found: "&cCanal não encontrado: &f{channel}"
+  focused: "&aAgora você está falando no canal {color}{channel}&a."
+  list-header: "&6Canais disponíveis &7(&f/ch <canal>&7):"
+  list-entry: " {color}{channel} &8- &7atalho &f/{nick}{current}"
+  list-current: " &a(atual)"
+  list-ignored: " &c(ignorado)"
+  ignoring: "&aVocê está ignorando o canal {color}{channel}&a."
+  unignoring: "&aVocê voltou a ver o canal {color}{channel}&a."
+  you-ignore: "&cVocê está ignorando o canal {channel}. Use &f/ch mute {channel} &cpara voltar a vê-lo."
+  delay: "&cAguarde &f{seconds}s &cpara falar de novo neste canal."
+  cost: "&7Você pagou &e{cost} &7para falar neste canal."
+  no-money: "&cVocê precisa de &e{cost} &cpara falar neste canal."
+  no-one-hears: "&eNinguém por perto para te escutar."
+  usage: "&cUse: &f/ch [canal] &cou &f/ch mute <canal>"
+
+private:
+  send: "&8[&7Para &f{receiver}&8] &7{msg}"
+  receive: "&8[&7De &f{sender}&8] &7{msg}"
+  usage: "&cUse: &f/tell <jogador> [mensagem]"
+  reply-usage: "&cUse: &f/r <mensagem>"
+  no-reply: "&cVocê não tem ninguém para responder."
+  not-online: "&cJogador não encontrado: &f{player}"
+  self: "&cVocê não pode enviar mensagens para si mesmo."
+  ignored: "&cEsse jogador não está recebendo suas mensagens."
+  afk: "&7{player} está AFK{motive}"
+  lock-on: "&aSuas mensagens agora vão direto para &f{player}&a. Use &f/tell {player} &anovamente para sair."
+  lock-off: "&aVocê saiu da conversa privada com &f{player}&a."
+
+spy:
+  channel: "&8[SPY] &7{msg}"
+  private: "&8[SPY] &7{sender} &8-> &7{receiver}&8: &7{msg}"
+  on: "&aModo espião ativado."
+  off: "&cModo espião desativado."
+  hide-on: "&aSuas mensagens agora estão escondidas do modo espião."
+  hide-off: "&cSuas mensagens voltaram a aparecer no modo espião."
+
+mute:
+  you-are-muted: "&cVocê está mutado."
+  you-are-muted-time: "&cVocê está mutado por mais &f{minutes} &cminuto(s)."
+  all-muted: "&cO chat está silenciado no momento."
+  done: "&aVocê mutou &f{player}&a."
+  done-time: "&aVocê mutou &f{player} &apor &f{minutes} &aminuto(s)."
+  notify: "&cVocê foi mutado por &f{staff}&c."
+  notify-time: "&cVocê foi mutado por &f{staff} &cpor &f{minutes} &cminuto(s)."
+  unmuted: "&aVocê desmutou &f{player}&a."
+  unmuted-notify: "&aVocê foi desmutado por &f{staff}&a."
+  already: "&cEsse jogador já está mutado."
+  not-muted: "&cEsse jogador não está mutado."
+  cannot: "&cEsse jogador não pode ser mutado."
+  invalid-time: "&cO tempo deve ser um número de minutos (0 ou mais)."
+  all-on: "&c{staff} silenciou o chat."
+  all-off: "&a{staff} liberou o chat."
+  all-already-on: "&cO chat já está silenciado."
+  all-already-off: "&cO chat não está silenciado."
+  usage: "&cUse: &f/mute <jogador> [minutos]"
+  unmute-usage: "&cUse: &f/unmute <jogador>"
+
+ignore:
+  added: "&aVocê está ignorando &f{player}&a."
+  removed: "&aVocê deixou de ignorar &f{player}&a."
+  list: "&7Ignorados: &f{players}"
+  empty: "&7Você não está ignorando ninguém. Use &f/ignore <jogador>&7."
+  cannot: "&cVocê não pode ignorar esse jogador."
+  self: "&cVocê não pode ignorar a si mesmo."
+
+afk:
+  on: "&7Você agora está AFK{motive}&7."
+  off: "&7Você não está mais AFK."
+  motive: " &8(&7{motive}&8)"
+
+general:
+  no-permission: "&cVocê não tem permissão para isso."
+  player-only: "&cApenas jogadores podem usar este comando."
+  reloaded: "&aSkyChat recarregado."
+  admin-help:
+    - "&6&lSkyChat &7- comandos:"
+    - " &f/skychat reload &8- &7recarrega config, mensagens e canais"
+    - " &f/skychat spy &8- &7ver canais distantes e mensagens privadas"
+    - " &f/skychat hide &8- &7esconder suas mensagens do modo espião"
+    - " &f/mute <jogador> [minutos] &8- &7mutar (sem tempo = permanente)"
+    - " &f/unmute <jogador> &8- &7desmutar"
+    - " &f/skychat muteall &8/ &funmuteall &8- &7silenciar / liberar o chat"

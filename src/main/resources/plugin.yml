@@ -1,0 +1,75 @@
+name: ${project.name}
+version: ${project.version}
+main: ${plugin.main}
+description: ${project.description}
+author: SkyMinigames
+depend: [Vault]
+softdepend: [PermissionsEx, Essentials]
+
+# Channel shortcuts (/l, /g, /sc...) are not listed here: they come from each channel's "nickname"
+# in plugins/SkyChat/channels and are handled by SkyChat directly.
+commands:
+  channel:
+    description: Lista, troca ou ignora canais.
+    usage: /ch [canal] | /ch mute <canal>
+    aliases: [ch, canal]
+  tell:
+    description: Envia uma mensagem privada.
+    usage: /tell <jogador> [mensagem]
+    aliases: [msg, pm, t, w, whisper, m]
+  reply:
+    description: Responde a última mensagem privada.
+    usage: /r <mensagem>
+    aliases: [r, responder]
+  ignore:
+    description: Ignora (ou deixa de ignorar) um jogador.
+    usage: /ignore [jogador]
+    aliases: [ignorar]
+  afk:
+    description: Fica AFK, com um motivo opcional.
+    usage: /afk [motivo]
+  skychat:
+    description: Administração do SkyChat.
+    usage: /skychat <reload|spy|hide|mute|unmute|muteall|unmuteall>
+    aliases: [schat]
+
+permissions:
+  skychat.*:
+    description: Todas as permissões do SkyChat.
+    default: op
+    children:
+      skychat.admin: true
+      skychat.spacing: true
+      skychat.color.allcolors: true
+      skychat.color.allformats: true
+      skychat.block.ignore: true
+      skychat.block.mute: true
+  skychat.admin:
+    description: Todos os comandos /skychat.
+    default: op
+    children:
+      skychat.admin.reload: true
+      skychat.admin.spy: true
+      skychat.admin.hide: true
+      skychat.admin.mute: true
+      skychat.admin.unmute: true
+      skychat.admin.muteall: true
+      skychat.admin.unmuteall: true
+  skychat.tell:
+    description: Usar /tell e /r.
+    default: true
+  skychat.ignore:
+    description: Usar /ignore e /ch mute.
+    default: true
+  skychat.afk:
+    description: Usar /afk.
+    default: true
+  skychat.spacing:
+    description: Linha em branco acima e abaixo das suas mensagens nos canais.
+    default: false
+  skychat.block.ignore:
+    description: Não pode ser ignorado.
+    default: false
+  skychat.block.mute:
+    description: Não pode ser mutado.
+    default: false

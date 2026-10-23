@@ -1,0 +1,26 @@
+# ============================================================
+#  SkyChat - configuration
+#  Channels are in the "channels" folder (one file per channel).
+# ============================================================
+
+# Channel used when a player just types in the chat
+default-channel: local
+
+# Show channel messages in the server console
+log-to-console: true
+
+# "Ninguém por perto" when nobody is close enough to read a local message
+show-no-one-hears-you: true
+
+# Players with the permission skychat.spacing get a blank line above and below their channel messages
+spacing: true
+
+private-messages:
+  # Muted players can't send private messages either
+  block-when-muted: true
+
+censor:
+  enabled: false
+  # "word"             -> replaced with *****
+  # "word;replacement" -> replaced with the replacement
+  words: []

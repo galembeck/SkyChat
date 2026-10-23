@@ -1,0 +1,11 @@
+name: global
+nickname: g
+format: '&7[G] {prefix}{plainsender}&7: {msg}'
+color: GRAY
+shortcutAllowed: true
+needFocus: false
+distance: 0.0
+crossworlds: true
+delayPerMessage: 3
+costPerMessage: 0.0
+showCostMessage: false

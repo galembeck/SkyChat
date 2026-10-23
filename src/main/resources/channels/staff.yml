@@ -1,0 +1,11 @@
+name: staff
+nickname: sc
+format: '&d[STAFF] {prefix}{plainsender}&b: {msg}'
+color: AQUA
+shortcutAllowed: true
+needFocus: false
+distance: 0.0
+crossworlds: true
+delayPerMessage: 0
+costPerMessage: 0.0
+showCostMessage: false
